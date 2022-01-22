@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <link href="assets/styles/styles.css" rel="stylesheet" type="text/css" />
+  <script src="js/classes.js"></script>
+  <script src="js/logic.js"></script>
+  <title>Vinylshop - Sklep z płytami winylowymi</title>
+</head>
+
+<body>
+
+<nav>
+  <div class="logo">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <title/>
+      <path
+          d="M12,1A11,11,0,1,0,23,12,11,11,0,0,0,12,1ZM5.5,12a1,1,0,0,1-2,0A8.51,8.51,0,0,1,12,3.5a1,1,0,0,1,0,2A6.51,6.51,0,0,0,5.5,12ZM8,12a4,4,0,1,1,4,4A4,4,0,0,1,8,12Zm4,8.5a1,1,0,0,1,0-2A6.51,6.51,0,0,0,18.5,12a1,1,0,0,1,2,0A8.51,8.51,0,0,1,12,20.5Z"
+          fill="#E1E2E2"/>
+      <circle cx="12" cy="12" fill="#E1E2E2" r="2"/>
+    </svg>
+    <h3>
+      <a href="index.html">VinylShop</a>
+    </h3>
+  </div>
+  <button id="mobile-menu">
+    <div id="sidebar-menu">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <title/>
+        <path
+            d="M12,1A11,11,0,1,0,23,12,11,11,0,0,0,12,1ZM5.5,12a1,1,0,0,1-2,0A8.51,8.51,0,0,1,12,3.5a1,1,0,0,1,0,2A6.51,6.51,0,0,0,5.5,12ZM8,12a4,4,0,1,1,4,4A4,4,0,0,1,8,12Zm4,8.5a1,1,0,0,1,0-2A6.51,6.51,0,0,0,18.5,12a1,1,0,0,1,2,0A8.51,8.51,0,0,1,12,20.5Z"
+            fill="#E1E2E2"/>
+        <circle cx="12" cy="12" fill="#E1E2E2" r="2"/>
+      </svg>
+      <h3>
+        <a href="index.html">VinylShop</a>
+      </h3>
+      <ul>
+        <li><a href="index.html">Strona główna</a></li>
+        <li><a href="#jazz" class="accent">Jazz</a></li>
+        <li><a href="#rock" class="accent">Rock</a></li>
+        <li><a href="#pop" class="accent">Pop</a></li>
+        <li><a href="cart.html">Koszyk</a></li>
+      </ul>
+    </div>
+  </button>
+  <div class="cart">
+    <a href="cart.html">
+      <div id="sum">
+      </div>
+    </a>
+  </div>
+</nav>
+
+<header>
+  <div class="mobile-logo">
+    <h3 class="no-first-letter">
+      Koszyk
+    </h3>
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <title/>
+      <path
+          d="M12,1A11,11,0,1,0,23,12,11,11,0,0,0,12,1ZM5.5,12a1,1,0,0,1-2,0A8.51,8.51,0,0,1,12,3.5a1,1,0,0,1,0,2A6.51,6.51,0,0,0,5.5,12ZM8,12a4,4,0,1,1,4,4A4,4,0,0,1,8,12Zm4,8.5a1,1,0,0,1,0-2A6.51,6.51,0,0,0,18.5,12a1,1,0,0,1,2,0A8.51,8.51,0,0,1,12,20.5Z"
+          fill="#1D2228"/>
+      <circle cx="12" cy="12" fill="#1D2228" r="2"/>
+    </svg>
+  </div>
+</header>
+<main>
+  <div class="container-50">
+    <div class="title-flex">
+      <h1>Twoje zamówienie</h1>
+      <button class="clearCart">Wyczyść koszyk</button>
+    </div>
+    <div id="cart">
+    </div>
+    <button id="order">
+      Złóż zamówienie
+    </button>
+  </div>
+</main>
+<footer>
+  VinylShop, Wojciech Knaś 2022
+</footer>
+
+<script>
+	// nie można użyć tej funkcji przed załadowaniem DOM,
+	// dlatego musi znajdować się tutaj
+	UserCart.readLocalStorage();
+	UserCart.renderCart();
+</script>
+</body>
+
+</html>

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <link href="assets/styles/styles.css" rel="stylesheet" type="text/css"/>
+  <script src="js/classes.js"></script>
+  <script src="js/logic.js"></script>
+  <title>Vinylshop - Sklep z płytami winylowymi</title>
+</head>
+<body>
+
+<nav>
+  <div class="logo">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <title/>
+      <path
+          d="M12,1A11,11,0,1,0,23,12,11,11,0,0,0,12,1ZM5.5,12a1,1,0,0,1-2,0A8.51,8.51,0,0,1,12,3.5a1,1,0,0,1,0,2A6.51,6.51,0,0,0,5.5,12ZM8,12a4,4,0,1,1,4,4A4,4,0,0,1,8,12Zm4,8.5a1,1,0,0,1,0-2A6.51,6.51,0,0,0,18.5,12a1,1,0,0,1,2,0A8.51,8.51,0,0,1,12,20.5Z"
+          fill="#E1E2E2"/>
+      <circle cx="12" cy="12" fill="#E1E2E2" r="2"/>
+    </svg>
+    <h3>
+      <a href="index.html">VinylShop</a>
+    </h3>
+  </div>
+  <button id="mobile-menu">
+    <div id="sidebar-menu">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <title/>
+        <path
+            d="M12,1A11,11,0,1,0,23,12,11,11,0,0,0,12,1ZM5.5,12a1,1,0,0,1-2,0A8.51,8.51,0,0,1,12,3.5a1,1,0,0,1,0,2A6.51,6.51,0,0,0,5.5,12ZM8,12a4,4,0,1,1,4,4A4,4,0,0,1,8,12Zm4,8.5a1,1,0,0,1,0-2A6.51,6.51,0,0,0,18.5,12a1,1,0,0,1,2,0A8.51,8.51,0,0,1,12,20.5Z"
+            fill="#E1E2E2"/>
+        <circle cx="12" cy="12" fill="#E1E2E2" r="2"/>
+      </svg>
+      <h3>
+        <a href="index.html">VinylShop</a>
+      </h3>
+      <ul>
+        <li><a href="index.html">Strona główna</a></li>
+        <li><a href="#jazz" class="accent">Jazz</a></li>
+        <li><a href="#rock" class="accent">Rock</a></li>
+        <li><a href="#pop" class="accent">Pop</a></li>
+        <li><a href="cart.html">Koszyk</a></li>
+      </ul>
+    </div>
+  </button>
+  <div class="cart">
+    <a href="cart.html">
+      <div id="sum">
+      </div>
+    </a>
+  </div>
+</nav>
+
+<header>
+  <div class="mobile-logo">
+    <h3>
+      VinylShop
+    </h3>
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <title/>
+      <path
+          d="M12,1A11,11,0,1,0,23,12,11,11,0,0,0,12,1ZM5.5,12a1,1,0,0,1-2,0A8.51,8.51,0,0,1,12,3.5a1,1,0,0,1,0,2A6.51,6.51,0,0,0,5.5,12ZM8,12a4,4,0,1,1,4,4A4,4,0,0,1,8,12Zm4,8.5a1,1,0,0,1,0-2A6.51,6.51,0,0,0,18.5,12a1,1,0,0,1,2,0A8.51,8.51,0,0,1,12,20.5Z"
+          fill="#1D2228"/>
+      <circle cx="12" cy="12" fill="#1D2228" r="2"/>
+    </svg>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <div class="categories">
+      <p>Gatunki</p>
+      <ul>
+        <li><a href="#jazz">Jazz</a></li>
+        <li><a href="#rock">Rock</a></li>
+        <li><a href="#pop">Pop</a></li>
+      </ul>
+    </div>
+    <h1 id="jazz">#jazz</h1>
+    <div class="albums-container">
+      <div class="album">
+        <img alt="Chet Baker - Pacific Jazz" src="assets/images/jazz/baker.jpg"/>
+        <div class="album-actions">
+          <div class="album-description">
+            <p>Autor: Chet Baker</p>
+            <p>Album: Pacific Jazz</p>
+            <p>Cena: 69zł</p>
+          </div>
+          <button class="cta-btn"
+                  data-author="Chet Baker"
+                  data-price="69"
+                  data-title="Pacific Jazz"
+                  data-image="assets/images/jazz/baker.jpg">
+            Dodaj <span class="desktop-only">do koszyka</span>
+          </button>
+        </div>
+      </div>
+      <div class="album">
+        <img alt="Benny Green - Green's Blues" src="assets/images/jazz/green.jpg"/>
+        <div class="album-actions">
+          <div class="album-description">
+            <p>Autor: Benny Green</p>
+            <p>Album: Green's Blues</p>
+            <p>Cena: 129zł</p>
+          </div>
+          <button class="cta-btn"
+                  data-author="Benny Green"
+                  data-price="129"
+                  data-title="Green's Blues"
+                  data-image="assets/images/jazz/green.jpg">Dodaj <span class="desktop-only">do koszyka</span>
+          </button>
+        </div>
+      </div>
+      <div class="album">
+        <img alt="John Coltrane - Blue Train" src="assets/images/jazz/coltrane.jpg"/>
+        <div class="album-actions">
+          <div class="album-description">
+            <p>Autor: John Coltrane</p>
+            <p>Album: Blue Train</p>
+            <p>Cena: 59zł</p>
+          </div>
+          <button class="cta-btn"
+                  data-author="John Coltrane"
+                  data-price="59"
+                  data-title="Blue Train"
+                  data-image="assets/images/jazz/coltrane.jpg">
+            Dodaj <span class="desktop-only">do koszyka</span>
+          </button>
+        </div>
+      </div>
+      <div class="album">
+        <img alt="Dave Brubeck - Time Out" src="assets/images/jazz/brubeck.jpg"/>
+        <div class="album-actions">
+          <div class="album-description">
+            <p>Autor: Dave Brubeck</p>
+            <p>Album: Time Out</p>
+            <p>Cena: 99zł</p>
+          </div>
+          <button class="cta-btn"
+                  data-author="Dave Brubeck"
+                  data-price="99"
+                  data-title="Time Out"
+                  data-image="assets/images/jazz/brubeck.jpg">Dodaj <span class="desktop-only">do koszyka</span>
+          </button>
+        </div>
+      </div>
+      <div class="album">
+        <img alt="Jazz in da House - Koldo Barosso" src="assets/images/jazz/barosso.jpg"/>
+        <div class="album-actions">
+          <div class="album-description">
+            <p>Autor: Koldo Barosso</p>
+            <p>Album: Jazz in da House</p>
+            <p>Cena: 69zł</p>
+          </div>
+          <button class="cta-btn"
+                  data-author="Koldo Barosso"
+                  data-price="69"
+                  data-title="Jazz in da House"
+                  data-image="assets/images/jazz/barosso.jpg">Dodaj <span class="desktop-only">do koszyka</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <h1 id="rock">#rock</h1>
+    <div class="albums-container">
+      <div class="album">
+        <img alt="Pink Floyd - The Dark Side of the Moon" src="assets/images/rock/pink.jpg"/>
+        <div class="album-actions">
+          <div class="album-description">
+            <p>Autor: Pink Floyd</p>
+            <p>Album: The Dark Side of the Moon</p>
+            <p>Cena: 129zł</p>
+          </div>
+          <button class="cta-btn"
+                  data-author="Pink Floyd"
+                  data-price="129"
+                  data-title="The Dark Side of the Moon"
+                  data-image="assets/images/rock/pink.jpg"> Dodaj <span class="desktop-only">do koszyka</span>
+          </button>
+        </div>
+      </div>
+      <div class="album">
+        <img alt="Nirvana - Nevermind" src="assets/images/rock/nirvana.jpg"/>
+        <div class="album-actions">
+          <div class="album-description">
+            <p>Autor: Nirvana</p>
+            <p>Album: Nevermind</p>
+            <p>Cena: 129zł</p>
+          </div>
+          <button class="cta-btn"
+                  data-author="Nirvana"
+                  data-price="129"
+                  data-title="Nevermind"
+                  data-image="assets/images/rock/nirvana.jpg">Dodaj <span class="desktop-only">do koszyka</span>
+          </button>
+        </div>
+      </div>
+      <div class="album">
+        <img alt="AC/DC - Back in Black" src="assets/images/rock/acdc.jpg"/>
+        <div class="album-actions">
+          <div class="album-description">
+            <p>Autor: AD/DC</p>
+            <p>Album: Back in Black</p>
+            <p>Cena: 159zł</p>
+          </div>
+          <button class="cta-btn"
+                  data-author="AC/DC"
+                  data-price="159"
+                  data-title="Back in Black"
+                  data-image="assets/images/rock/acdc.jpg">Dodaj <span class="desktop-only">do koszyka</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <h1 id="pop">#pop</h1>
+    <div class="albums-container">
+      <div class="album">
+        <img alt="Coldplay - Magic" src="assets/images/pop/coldplay.jpg"/>
+        <div class="album-actions">
+          <div class="album-description">
+            <p>Autor: Coldplay</p>
+            <p>Album: Magic</p>
+            <p>Cena: 129zł</p>
+          </div>
+          <button class="cta-btn"
+                  data-author="Coldplay"
+                  data-price="129"
+                  data-title="Magic"
+                  data-image="assets/images/pop/coldplay.jpg"> Dodaj <span class="desktop-only">do koszyka</span>
+          </button>
+        </div>
+      </div>
+      <div class="album">
+        <img alt="Adele - 21" src="assets/images/pop/adele.jpg"/>
+        <div class="album-actions">
+          <div class="album-description">
+            <p>Autor: Adele</p>
+            <p>Album: 21</p>
+            <p>Cena: 129zł</p>
+          </div>
+          <button class="cta-btn"
+                  data-author="Adele"
+                  data-price="129"
+                  data-title="21"
+                  data-image="assets/images/pop/adele.jpg">Dodaj <span class="desktop-only">do koszyka</span>
+          </button>
+        </div>
+      </div>
+      <div class="album">
+        <img alt="Ed Sheeran - Divide" src="assets/images/pop/sheeran.jpg"/>
+        <div class="album-actions">
+          <div class="album-description">
+            <p>Autor: Ed Sheeran</p>
+            <p>Album: Divide</p>
+            <p>Cena: 99zł</p>
+          </div>
+          <button class="cta-btn"
+                  data-author="Ed Sheeran"
+                  data-price="99"
+                  data-title="Divide"
+                  data-image="assets/images/pop/sheeran.jpg">Dodaj <span class="desktop-only">do koszyka</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<footer>
+  VinylShop, Wojciech Knaś 2022
+</footer>
+
+<script>
+	// nie można użyć tej funkcji przed załadowaniem DOM,
+	// dlatego musi znajdować się tutaj
+	UserCart.readLocalStorage();
+</script>
+</body>
+</html>
